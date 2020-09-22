@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF6DC"
+    android:orientation="vertical"
+    tools:context=".EditRecordincm">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Edit Incom Record"
+        android:textColor="#050505"
+        android:textSize="25dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7">
+
+                    <EditText
+                        android:id="@+id/amount_edit_incm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Amount"
+                        android:inputType="number" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Spinner
+                    android:id="@+id/currency_unit_edit_incm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:gravity="center_vertical" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="46dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Category"
+                    android:textSize="24sp" />
+
+                <Spinner
+                    android:id="@+id/spinner_category_expense_edit_incm"
+                    android:layout_width="236dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/description_edit_incm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Add Note"
+                    android:maxLines="5" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/date_edit_incm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffffff"
+                    android:hint="Tap to Choose Date"
+                    android:padding="5dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/imageview_edit_incm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.3"
+                    android:paddingTop="20dp"
+                    android:text="Gallery"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/images_edit_incm"
+                    android:layout_width="353dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    app:srcCompat="@drawable/expense_img" />
+
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spinner_edit_incm"
+                style="@style/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6edfdc" />
+
+            <Button
+                android:id="@+id/save_edit_incm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="25dp"
+                android:background="#FFEB3B"
+                android:text="Save Changes"
+                android:textColor="#34495e" />
+
+            <Button
+                android:id="@+id/bt_delete_incm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete this record" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
