@@ -172,3 +172,57 @@ Due to limited amount of developer and resource. This mobile application is main
 2.3 Compatibility
 
 Mobile application should be Android-based.
+
+
+# 3 SQLite
+3.1 Database structure overview
+
+SQLite is used for storing user data. There are total three tables created in expense tracker application:
+
+•	TABLE “incomes”: for saving user incomes.
+
+•	TABLE “expense”: for saving user expense.
+
+•	TABLE “users”: for saving user profile.
+
+
+3.2 TABLE “incomes”
+
+o	_id, integer, primary key, automatic generated
+
+o	Amount, text
+
+o	Category, text
+
+o	Date, text
+
+o	Description, text
+
+o	Image, text
+
+
+3.3 TABLE “expense”
+
+o	_id, integer, primary key, automatic generated
+
+o	Amount, text
+
+o	Category, text
+
+o	Date, text
+
+o	Description, text
+
+o	Image, text
+
+
+
+3.4 TABLE “users”
+
+o	_id, integer, primary key, automatic generated
+
+o	username, text
+
+o	password, text
+
+
