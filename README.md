@@ -1,4 +1,4 @@
-# Android Money Manager application
+# Software engineering project --- Expense Tracker (Android application)
 
 
 # Project management:
