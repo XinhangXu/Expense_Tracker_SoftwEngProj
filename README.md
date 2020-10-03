@@ -1,8 +1,8 @@
 Android Money Manager application
 
 
-![01](https://github.com/XinhangXu/Expense_Tracker_SoftwEngProj/edit/master/gui/01.PNG)
-![02](https://github.com/XinhangXu/Expense_Tracker_SoftwEngProj/edit/master/gui/02.JPG)
+![01](https://github.com/XinhangXu/Expense_Tracker_SoftwEngProj/blob/master/gui/01.png)
+![02](https://github.com/XinhangXu/Expense_Tracker_SoftwEngProj/blob/master/gui/02.jpg)
 
 
 
